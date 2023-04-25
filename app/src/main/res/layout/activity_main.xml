@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="361dp"
+        android:layout_height="57dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/purple_500"
+        android:text="Заказ оформления билета на поезд"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="396dp"
+        android:layout_height="367dp"
+        android:orientation="vertical"
+        android:background="#B594F1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/ID"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textColorHint="#FFFFFF"
+            android:hint="ID Пользователя"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/route"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textColorHint="#FFFFFF"
+            android:hint="Маршрут"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/timeStart"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColorHint="#FFFFFF"
+            android:gravity="center"
+            android:hint="Дата и вермя отправления"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/timeEnd"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textColorHint="#FFFFFF"
+            android:hint="Дата и время прибытия"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/trainCar"
+                android:layout_width="207dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:hint="Вагон"
+                android:textColorHint="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/place"
+                android:layout_width="207dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:hint="Место"
+                android:textColorHint="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:background="#855BD3"
+            android:textColorHint="#FFFFFF"
+            android:hint="Стоимость билета(110 рублей)"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="376dp"
+        android:layout_height="58dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@color/purple_500"
+        android:text="Оформить билет"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.175" />
+
+
+</android.support.constraint.ConstraintLayout>
